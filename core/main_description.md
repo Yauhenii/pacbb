@@ -118,8 +118,8 @@ bounds = {
         bound_delta=0.025,   
         loss_delta=0.01
     ),
-    "mcallister": bound_factory.create(
-        "mcallister",
+    "mcallester": bound_factory.create(
+        "mcallester",
         bound_delta=0.025,
         loss_delta=0.01
     )

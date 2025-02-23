@@ -5,9 +5,9 @@ from torch import Tensor
 from core.objective import AbstractObjective
 
 
-class McAllisterObjective(AbstractObjective):
+class McAllesterObjective(AbstractObjective):
     """
-    McAllister bound objective (based on McAllister, 1999 and related works),
+    McAllester bound objective (based on McAllester, 1999 and related works),
     combining empirical loss with a square-root term involving KL and delta,
     plus additional constants (e.g., 5/2 ln(n)) in the bounding expression.
     """
@@ -23,7 +23,7 @@ class McAllisterObjective(AbstractObjective):
 
     def calculate(self, loss: Tensor, kl: Tensor, num_samples: float) -> Tensor:
         """
-        Compute the McAllister objective.
+        Compute the McAllester objective.
 
         Derived from a PAC-Bayes bound that includes terms like ln(num_samples)
         and -ln(delta).

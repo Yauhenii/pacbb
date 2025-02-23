@@ -3,7 +3,7 @@ from core.objective import (
     BBBObjective,
     FClassicObjective,
     FQuadObjective,
-    McAllisterObjective,
+    McAllesterObjective,
     TolstikhinObjective,
 )
 from scripts.utils.factory import AbstractFactory
@@ -15,5 +15,5 @@ class ObjectiveFactory(AbstractFactory[AbstractObjective]):
         self.register_creator("bbb", BBBObjective)
         self.register_creator("fclassic", FClassicObjective)
         self.register_creator("fquad", FQuadObjective)
-        self.register_creator("mcallister", McAllisterObjective)
+        self.register_creator("mcallester", McAllesterObjective)
         self.register_creator("tolstikhin", TolstikhinObjective)

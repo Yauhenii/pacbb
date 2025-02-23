@@ -6,7 +6,7 @@ dist_init:
 factory:
   bounds:
   - kl
-  - mcallister
+  - mcallester
   data_loader:
     name: cifar10
     params:
